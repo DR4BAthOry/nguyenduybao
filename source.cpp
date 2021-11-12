@@ -2,16 +2,16 @@
 using namespace std;
 int tong(int a, int b);
 int hieu(int a, int b);
+int tich(int a, int b);
 
-<<<<<<< HEAD
 int hieu(int a, int b)
 {
 	return a - b;
-=======
-int tong(int a, int b)
+}
+
+int tich(int a, int b)
 {
-	return a + b;
->>>>>>> f399ec90cf2878a25eb33e3273f1b67064237110
+	return a*b;
 }
 
 int main()
@@ -22,17 +22,15 @@ int main()
 	cin >> a;
 	cout << "Nhap so nguyen 2: ";
 	cin >> b;
-	cout << "Chon phep toan (+,-) ";
+	cout << "Chon phep toan (+,-,*) ";
 	cin >> phepToan;
-<<<<<<< HEAD
 	if (phepToan == '-')
 	{
 		cout << "Hieu la:" << hieu(a, b);
-=======
-	if (phepToan == '+')
+	}
+	else if (phepToan == '*')
 	{
-		cout << "Tong la:" << tong(a, b);
->>>>>>> f399ec90cf2878a25eb33e3273f1b67064237110
+		cout << "Tich la:" << tich(a, b);
 	}
 
 	system("pause");
