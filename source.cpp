@@ -14,8 +14,19 @@ int tich(int a, int b)
 	return a*b;
 }
 
+int ktChanLe(int n)
+{
+	return (n%2==0)?1:0;
+}
+
 int main()
 {
+	int n = 5;
+    	int kt = ktChanLe(n);
+    	if(kt == 1)
+      		cout<<"n là số chẵn";
+    	else
+      		cout<<"n là số lẻ\n";
 	int a, b;
 	char phepToan;
 	cout << "Nhap so nguyen 1: ";
